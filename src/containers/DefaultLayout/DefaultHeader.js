@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 
-import { AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
+import { AppNavbarBrand } from '@coreui/react';
 import logo from '../../assets/img/brand/logo.png'
 
 
@@ -14,13 +14,8 @@ const defaultProps = {};
 
 class DefaultHeader extends Component {
   render() {
-
-    // eslint-disable-next-line
-    const { children, ...attributes } = this.props;
-
     return (
       <React.Fragment>
-        <AppSidebarToggler className="d-lg-none" display="md" mobile />
         <AppNavbarBrand
           full={{ src: logo, width: 89, height: 25, alt: 'Logo' }}
           minimized={{ src: logo, width: 30, height: 30, alt: 'Logo' }}

@@ -312,6 +312,8 @@ class Dashboard extends Component {
       cardChartData3.datasets[0].data.push(parseInt(item.x))
   })
 
+
+
     let max_quantity = Math.max.apply(Math, cardChartData2.datasets[0].data);
     let min_quantity = Math.min.apply(Math, cardChartData2.datasets[0].data);
     cardChartOpts2.scales.yAxes[0].ticks.max = max_quantity;
